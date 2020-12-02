@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os,sys,re
 from PIL import Image
 from io import BytesIO
@@ -16,9 +17,9 @@ def mergeFiles(inputFilesPaths,outputFilePath):
             else:
                 pdfFile = PdfReader(path)
                 outputFile.addpages(pdfFile.pages)
-        except E:
+        except:
             print(f"Error: {path}")
-            return
+            exit()
     with open(outputFilePath,'wb') as out:
         outputFile.write(out)
 
