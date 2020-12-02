@@ -25,4 +25,8 @@ def mergeFiles(inputFilesPaths,outputFilePath):
 if __name__ ==  '__main__':
     inputFilesPaths = sys.argv[1:-1]
     outputFilePath = sys.argv[-1]
-    mergeFiles(inputFilesPaths, outputFilePath)
+    if outputFilePath.endswith('.pdf'):
+        mergeFiles(inputFilesPaths, outputFilePath)
+    else:
+        print("Error: Output Dile path absent")
+        exit()
