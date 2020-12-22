@@ -29,5 +29,5 @@ if __name__ ==  '__main__':
     if outputFilePath.endswith('.pdf'):
         mergeFiles(inputFilesPaths, outputFilePath)
     else:
-        print("Error: Output Dile path absent")
+        print("Error: Output File path absent")
         exit()
