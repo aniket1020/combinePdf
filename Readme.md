@@ -1,6 +1,6 @@
 # CombinePdf
 
-A simple Python Script to combine PDFs and Images (jpg | png | jpeg)
+A simple Python Script to combine PDFs and Images (jpg | png | jpeg).
 
 # Usage
 
